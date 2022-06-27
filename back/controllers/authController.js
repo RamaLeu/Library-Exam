@@ -37,8 +37,6 @@ exports.loginUser = async(req, res) =>{
     if (userExists){
     AuthModel.findOne({ email: req.body.email },function (err, person) {
         let hashedPass = bcrypt.hashSync(req.body.password, person.salt);
-        console.log(hashedPass);
-        console.log(person.password);
         if (hashedPass === person.password){
             res.status(201).json({
             status: "Success",

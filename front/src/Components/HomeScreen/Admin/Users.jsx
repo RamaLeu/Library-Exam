@@ -26,7 +26,7 @@ const Users = () => {
 
     useEffect(() => {
         fetchUsers();
-    }, [])
+    }, []);
     
 
     function addUser(e){
@@ -76,18 +76,28 @@ const Users = () => {
         if (isValid){
             hashedPassword = bcrypt.hashSync(password, salt);
             console.log(username);
-            let data = {
+            let changeData;
+            if (password){
+                changeData = {
+                    id: editingID,
+                    username: username,
+                    password: hashedPassword,
+                    email: email,
+                    salt: salt,
+                    type: type
+                };
+            }else{
+                changeData = {
                 id: editingID,
                 username: username,
                 email: email,
-                password: hashedPassword,
                 salt: salt,
                 type: type
-            };
+            };}
             const requestOptions = {
                 method: 'PATCH',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(data)
+                body: JSON.stringify(changeData)
             };
             fetch('http://localhost:3001/api/v1/auth/', requestOptions)
                 .then(response => response.json())
