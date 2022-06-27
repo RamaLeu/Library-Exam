@@ -29,7 +29,7 @@ const Register = (props) => {
                 email: email,
                 password: hashedPassword,
                 salt: salt,
-                type: "admin"
+                type: "user"
             };
             const requestOptions = {
                 method: 'POST',
