@@ -1,0 +1,38 @@
+.registerPage{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.registerPage form{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.registerPage form input{
+    padding: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.authBtn{
+    width: 35%;
+    padding: 1%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: black;
+    border-radius: 6px;
+    margin-top: 1%;
+    background-color: #816c61;
+    border: none;
+    
+}
+
+.authBtn:hover{
+  cursor: pointer;
+  background-color: #a89b9d;
+}

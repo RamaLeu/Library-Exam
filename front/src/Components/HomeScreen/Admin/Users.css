@@ -1,0 +1,35 @@
+.adminUsersAdd{
+    width: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.adminUsersAdd form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adminUsersAdd form input{
+    padding: 1%;
+}
+.adminUsersAdd form select{
+    padding: 1%;
+}
+.userAddBtn{
+    height: 100%;
+}
+.adminUsersList{
+    width: 100%;
+}
+.adminUserSingle{
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: #a89b9d;
+}
+.adminUserSingle span{
+    margin: 1%;
+}

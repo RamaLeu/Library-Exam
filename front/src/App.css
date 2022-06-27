@@ -1,0 +1,18 @@
+.brownBtn{
+  width: 8%;
+  border: none;
+  background-color: #816c61;
+}
+.brownBtn:hover{
+  cursor: pointer;
+  background-color: #a89b9d;
+}
+.linkBtn{
+  padding: 1%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  color: black;
+  border-radius: 6px;
+  margin-top: 1%;
+}

@@ -1,0 +1,53 @@
+.homePage{
+    width: 100%;
+    height: 98vh;
+    box-sizing: border-box;
+
+}
+.homeBooksList{
+    display: flex;
+    padding: 1%;
+    height: 80%;
+    overflow-y: auto;
+    border-bottom: 1px solid black;
+}
+.homeSingleBook{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin: 2%;
+    width: 20%;
+    height: 50%;
+    background-color: #cfcfea;
+}
+.singleBookImg{
+    width: 100%;
+    height: 60%;
+}
+.singleBookImg img{
+    width: 100%;
+    height: 100%;
+}
+.singleBookText{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.singleBookText span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+.singleBookText button{
+    border: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: #816c61;
+}
+.singleBookText button:hover{
+    cursor: pointer;
+    background-color: #a89b9d;
+}
